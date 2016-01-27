@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Criação e Desenvolvimento de Websites" />
 
-        <title>Claudio Romano</title>
+        <title>Romano</title>
 
         <link rel="icon" href="images/ico.ico" type="image/x-icon" />
         <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <body id="begin">
         <nav id="menu-principal" class="navbar-default navbar-fixed">
             <div class="nav-wrapper">
-                <a href="#inicio" class="brand-logo logo">Claudio Romano</a>
+                <a href="#inicio" class="brand-logo logo">Romano</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="waves-effect waves-light" href="#inicio">Início</a></li>
@@ -329,7 +329,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             <div class="fixed-action-btn vertical click-to-toggle hide" id="action-button">
                 <a class="btn-floating btn-large orange waves-effect waves-light">
-                    <i class="large mdi-navigation-menu"></i>
+                    <i class="material-icons">menu</i>
                 </a>
                 <ul>
                     <li><a class="btn-floating green tooltipped" href="tel:+5511997677804" data-position="left" data-delay="50" data-tooltip="11 99767-7804"><i class="fa fa-phone"></i></a></li>
