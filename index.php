@@ -58,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </head>
 
-    <body>
+    <body id="begin">
         <nav id="menu-principal" class="navbar-default navbar-fixed">
             <div class="nav-wrapper">
                 <a href="#inicio" class="brand-logo logo">Claudio Romano</a>
@@ -328,7 +328,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
 
-            <div class="fixed-action-btn vertical click-to-toggle" id="action-button">
+            <div class="fixed-action-btn vertical click-to-toggle hide" id="action-button">
                 <a class="btn-floating btn-large orange waves-effect waves-light">
                     <i class="large mdi-navigation-menu"></i>
                 </a>

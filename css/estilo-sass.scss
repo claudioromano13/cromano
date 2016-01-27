@@ -52,6 +52,7 @@ h6 {
 .carousel-item {
   background: $white;
   cursor: e-resize;
+  margin-top: 30px;
 }
 
 .warning {
@@ -197,7 +198,7 @@ nav#menu-principal {
 
 .hide {
   display: none;
-}
+ }
 
 .show {
   display: block;
@@ -211,6 +212,9 @@ nav#menu-principal {
 #customers {
   background: $blue;
   padding: 40px 0;
+  .carousel{
+    height: 150px;
+  }
   .thumbnail {
     .col {
       background: $white;
@@ -646,10 +650,15 @@ body.portfolio {
       }
     }
   }
-  #process {
-    .limiter {
-      width: 90%;
-      margin: 0 auto;
+  #begin{
+    #process {
+      .limiter {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .bx-controls-direction{
+        display: none;
+      }
     }
   }
   #customers {
