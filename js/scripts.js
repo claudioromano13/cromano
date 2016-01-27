@@ -29,7 +29,7 @@
     $(window).bind('scroll', function() {
       var navbar = $('.navbar-default');
       var menu = $('nav#menu-principal ul li a');
-      var arrow = $('#arrow-up');
+      var arrow = $('.fixed-action-btn');
 
       if ($(window).scrollTop() > 80) {
         $(navbar).css('transition', '500ms').addClass('menu');

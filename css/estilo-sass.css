@@ -32,7 +32,8 @@ h6 {
 
 .carousel-item {
   background: #fff;
-  cursor: e-resize; }
+  cursor: e-resize;
+  margin-top: 30px; }
 
 .warning {
   border-bottom: 1px solid #f00 !important;
@@ -155,6 +156,8 @@ nav#menu-principal {
 #customers {
   background: #303f9f;
   padding: 40px 0; }
+  #customers .carousel {
+    height: 150px; }
   #customers .thumbnail .col {
     background: #fff;
     border: 5px solid #303f9f; }
@@ -476,9 +479,11 @@ body.portfolio {
       width: 100%;
       margin-top: 40px; }
 
-  #process .limiter {
+  #begin #process .limiter {
     width: 90%;
     margin: 0 auto; }
+  #begin #process .bx-controls-direction {
+    display: none; }
 
   #customers {
     padding: 10px 0 0 0; }
