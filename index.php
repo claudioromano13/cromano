@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-error_reporting(E_ALL);
 $subjectPrefix = '[Contato via Site]';
 $emailTo = 'claudioromano13@gmail.com';
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
