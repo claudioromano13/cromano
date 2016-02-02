@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Criação e Desenvolvimento de Websites" />
 
-        <title>Romano</title>
+        <title>Romano Dev</title>
 
         <link rel="icon" href="images/ico.ico" type="image/x-icon" />
         <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <body id="begin">
         <nav id="menu-principal" class="navbar-default navbar-fixed">
             <div class="nav-wrapper">
-                <a href="#inicio" class="brand-logo logo">Romano</a>
+                <a href="#inicio" class="brand-logo logo">Romano Dev</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="waves-effect waves-light" href="#inicio">Início</a></li>
@@ -146,6 +146,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <ul class="processo">
                 <li>
                     <div class="limiter">
+                        <h3><i class="fa fa-code"></i> Desenvolvimento</h3>
+                        <p>Programação responsiva com foco em performance</p>
+                    </div>
+                </li>
+                <li>
+                <li>
+                    <div class="limiter">
+                        <h3><i class="fa fa-paint-brush"></i> Design</h3>
+                        <p>Criação de layout exclusivo</p>
+                    </div>
+                </li>
+                    <div class="limiter">
                         <h3><i class="fa fa-file-text-o"></i> Planejamento</h3>
                         <p>Levantamento das necessidades, prazos e orçamento</p>
                     </div>
@@ -154,18 +166,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="limiter">
                         <h3><i class="fa fa-file-text-o"></i> Arquitetura da Informação</h3>
                         <p>Criação de wireframe (protótipo navegável)</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="limiter">
-                        <h3><i class="fa fa-paint-brush"></i> Design</h3>
-                        <p>Criação de layout exclusivo</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="limiter">
-                        <h3><i class="fa fa-code"></i> Desenvolvimento</h3>
-                        <p>Programação responsiva com foco em performance</p>
                     </div>
                 </li>
             </ul>
@@ -179,7 +179,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <div class="circle z-depth-2"><img src="images/perfil.jpg" alt="claudio romano" /></div>
                     </div>
                     <div class="col s12 m4 l8">
-                        <p>Meu nome é Claudio Romano</p>
+                        <p>Olá, meu nome é Romano.</p>
                         <p>Sou graduado em Design Gráfico e possuo mais de 5 anos de experiência em design e desenvolvimento front-end.</p>
                         <p>Participei de grandes projetos como a revista digital Nova Escola, o portal do Sistema FIERGS e intranet Yasuda / Marítima Seguros.</p>
 
@@ -209,14 +209,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="col s12 m6 l3">
                         <p><span>S</span> Sass</p>
                     </div>
-                    <!-- <div class="col s12 m6 l3">
-                        <p><span>A</span> Angular</p>
-                    </div> -->
                     <div class="col s12 m6 l3">
                         <p><span>Ps</span> Photoshop</p>
                     </div>
                     <div class="col s12 m6 l3">
                         <p><i class="fa fa-drupal"></i> Drupal</p>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <p><span>A</span> Axure</p>
                     </div>
                 </div>           
             </div>
