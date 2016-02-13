@@ -150,13 +150,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <p>Programação responsiva com foco em performance</p>
                     </div>
                 </li>
-                <li>
+                
                 <li>
                     <div class="limiter">
                         <h3><i class="fa fa-paint-brush"></i> Design</h3>
                         <p>Criação de layout exclusivo</p>
                     </div>
                 </li>
+                <li>
                     <div class="limiter">
                         <h3><i class="fa fa-file-text-o"></i> Planejamento</h3>
                         <p>Levantamento das necessidades, prazos e orçamento</p>
