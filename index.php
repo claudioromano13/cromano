@@ -184,7 +184,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <p>Sou graduado em Design Gráfico e possuo mais de 5 anos de experiência em design e desenvolvimento front-end.</p>
                         <p>Participei de grandes projetos como a revista digital Nova Escola, o portal do Sistema FIERGS e intranet Yasuda / Marítima Seguros.</p>
 
-                        <p>Para saber mais visite meu perfil no <a href="https://www.linkedin.com/profile/view?id=91274541&amp;trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin.</a></p>
+                        <p>Para saber mais visite meu perfil no <a href="https://br.linkedin.com/in/claudioromano13" target="_blank"><i class="fa fa-linkedin-square"></i> linkedin.</a></p>
                     </div>
                 </div>
 
@@ -334,7 +334,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </a>
                 <ul>
                     <li><a class="btn-floating green tooltipped" href="tel:+5511997677804" data-position="left" data-delay="50" data-tooltip="11 99767-7804"><i class="fa fa-phone"></i></a></li>
-                    <li><a class="btn-floating blue" href="https://www.linkedin.com/profile/view?id=91274541&amp;trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="btn-floating blue" href="https://br.linkedin.com/in/claudioromano13" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
             <div class="fixed-action-btn hide" id="arrow-up">
