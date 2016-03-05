@@ -42,18 +42,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <title>Romano Dev</title>
 
-        <link rel="icon" href="images/ico.ico" type="image/x-icon" />
+        <link rel="icon" href="prod/images/ico.ico" type="image/x-icon" />
         <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="all" />
-        <link href="css/styles.css" rel="stylesheet">
+        <link href="prod/css/styles.css" rel="stylesheet">
 
-        <script src="js/jquery-1.11.1.min.js"></script>
-        <script src="js/jquery.bxslider.min.js"></script>
-        <script src="js/scripts.js"></script>
+        <script src="prod/js/jquery-1.11.1.min.js"></script>
+        <script src="prod/js/jquery.bxslider.js"></script>
+        <script src="prod/js/scripts.js"></script>
+        <script src="prod/js/materialize.js"></script>
 
     </head>
 
@@ -85,7 +86,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php if(!empty($emailSent)): ?>    
                 <div class="alert alert-success">
                     <!-- <div class="close"><i class="fa fa-times"></i></div> -->
-                    <div class="circle z-depth-2"><img src="images/perfil.jpg" alt="claudio romano" /></div>
+                    <div class="circle z-depth-2"><img src="prod/images/perfil.jpg" alt="claudio romano" /></div>
                     <p>Sua mensagem foi enviada com sucesso.</p>
                 </div>  
                 <div class="bg-alert"></div>
@@ -93,7 +94,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php if(!empty($hasError)): ?>
                 <div class="alert alert-danger">
                     <div class="close"><i class="fa fa-times"></i></div>
-                    <div class="circle z-depth-2"><img src="images/perfil.jpg" alt="claudio romano" /></div>
+                    <div class="circle z-depth-2"><img src="prod/images/perfil.jpg" alt="claudio romano" /></div>
                     <p>Erro no envio, tente novamente mais tarde.</p></div>
                 </div>
                     <div class="bg-alert"></div>
@@ -106,7 +107,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h1><span class="azul">W</span>eb Developer & <span class="vermelho">W</span>eb Designer</h1>
                 <p>Design e Desenvolvimento Front-End</p>
             </div>   
-            <div class="bg"><img src="images/blue.jpg" alt="chamada" /></div>
+            <div class="bg"><img src="prod/images/blue.jpg" alt="chamada" /></div>
         </section>
 
         <section id="skills">
@@ -177,7 +178,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="container box">
                 <div class="row">
                     <div class="col s12 m4 l2 perfil">
-                        <div class="circle z-depth-2"><img src="images/perfil.jpg" alt="claudio romano" /></div>
+                        <div class="circle z-depth-2"><img src="prod/images/perfil.jpg" alt="claudio romano" /></div>
                     </div>
                     <div class="col s12 m4 l8">
                         <p>Olá, meu nome é Romano.</p>
@@ -229,63 +230,63 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h3 class="center fontwhite">Alguns clientes que já foram atendidos</h3>
             <div class="row thumbnail">
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/fvc.png" alt="Fundação Victor Civitta" />
+                    <img src="prod/images/clientes/fvc.png" alt="Fundação Victor Civitta" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/neclube.png" alt="Nova Escola Clube" />
+                    <img src="prod/images/clientes/neclube.png" alt="Nova Escola Clube" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/nescola.png" alt="Nova Escola" />
+                    <img src="prod/images/clientes/nescola.png" alt="Nova Escola" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/gescolar.png" alt="Gestão Escolar" />
+                    <img src="prod/images/clientes/gescolar.png" alt="Gestão Escolar" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/gqe.png" alt="Gente Que Educa" />
+                    <img src="prod/images/clientes/gqe.png" alt="Gente Que Educa" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/mercantil.png" alt="Banco Mercantil do Brasil" />
+                    <img src="prod/images/clientes/mercantil.png" alt="Banco Mercantil do Brasil" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/basics.png" alt="Basics" />
+                    <img src="prod/images/clientes/basics.png" alt="Basics" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/argoit.png" alt="Argo IT" />
+                    <img src="prod/images/clientes/argoit.png" alt="Argo IT" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/fiergs.png" alt="FIERGS" />
+                    <img src="prod/images/clientes/fiergs.png" alt="FIERGS" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/phi.png" alt="PHI Engenharia" />
+                    <img src="prod/images/clientes/phi.png" alt="PHI Engenharia" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/titan.png" alt="Titan" />
+                    <img src="prod/images/clientes/titan.png" alt="Titan" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/yasuda.png" alt="Yasuda Marítima" />
+                    <img src="prod/images/clientes/yasuda.png" alt="Yasuda Marítima" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/brasilprev.png" alt="Brasilprev" />
+                    <img src="prod/images/clientes/brasilprev.png" alt="Brasilprev" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/sotreq.png" alt="Sotreq" />
+                    <img src="prod/images/clientes/sotreq.png" alt="Sotreq" />
                 </div>
                 <div class="col s12 m6 l3">
-                    <img src="images/clientes/giz.png" alt="Giz de Cera Studio" />
+                    <img src="prod/images/clientes/giz.png" alt="Giz de Cera Studio" />
                 </div>
             </div>
 
             <div class="carousel mobile">
-                <a class="carousel-item"><img src="images/clientes/fvc.png" alt="Fundação Victor Civitta" /></a>
-                <a class="carousel-item"><img src="images/clientes/neclube.png" alt="Nova Escola Clube" /></a>
-                <a class="carousel-item"><img src="images/clientes/nescola.png" alt="Nova Escola" /></a>
-                <a class="carousel-item"><img src="images/clientes/gescolar.png" alt="Gestão Escolar" /></a>
-                <a class="carousel-item"><img src="images/clientes/sotreq.png" alt="Sotreq" /></a>
-                <a class="carousel-item"><img src="images/clientes/yasuda.png" alt="Yasuda Marítima" /></a>
-                <a class="carousel-item"><img src="images/clientes/basics.png" alt="Basics" /></a>
-                <a class="carousel-item"><img src="images/clientes/fiergs.png" alt="FIERGS" /></a>
-                <a class="carousel-item"><img src="images/clientes/phi.png" alt="PHI Engenharia" /></a>
-                <a class="carousel-item"><img src="images/clientes/titan.png" alt="Titan" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/fvc.png" alt="Fundação Victor Civitta" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/neclube.png" alt="Nova Escola Clube" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/nescola.png" alt="Nova Escola" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/gescolar.png" alt="Gestão Escolar" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/sotreq.png" alt="Sotreq" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/yasuda.png" alt="Yasuda Marítima" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/basics.png" alt="Basics" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/fiergs.png" alt="FIERGS" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/phi.png" alt="PHI Engenharia" /></a>
+                <a class="carousel-item"><img src="prod/images/clientes/titan.png" alt="Titan" /></a>
             </div>
         </section>
 
@@ -293,7 +294,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div id="layouts"></div>
             <div class="parallax-design">
                 <div class="mask"></div>
-                <div class="parallax"><img src="images/blue.jpg" alt="design" /></div>
+                <div class="parallax"><img src="prod/images/blue.jpg" alt="design" /></div>
             </div>
         </section>
 
@@ -343,7 +344,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </a>
             </div>
         </footer>
-        <script type="text/javascript" src="js/contact-form.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
+      
     </body>
 </html>
