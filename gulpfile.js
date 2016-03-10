@@ -30,7 +30,7 @@ gulp.task('dist', function() {
 // E pra terminar usamos o `gulp.dest` para colocar os arquivos concatenados e minificados na pasta build/
 gulp.src(files)
 //.pipe(concat('./prod/js'))
-.pipe(rename('.min.js'))
+.pipe(rename({suffix: '.min'}))
 .pipe(uglify())
 .pipe(gulp.dest('./prod/js'));
 });
