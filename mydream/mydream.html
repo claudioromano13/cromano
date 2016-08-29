@@ -1,17 +1,245 @@
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
 
-        <title>Romano Dev</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
 
-        <link rel="icon" href="prod/images/ico.ico" type="image/x-icon" />
-        <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">   
-    </head>
 
-    <body>
-        <h1>my dream</h1>
-    
-    </body>
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="317126818008-vhu3s8jtuqru4lgkfojgg2a26g95ht6f.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+   
+    <link rel="stylesheet" type="text/css" href="dist/css/general.min.css" />
+  
+    <title>My Dream</title>
+
+
+
+     <style type="text/css">
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,600,700,400);
+ 
+      body {
+        margin: 0;
+        padding: 10%;
+        text-align: center;
+        font-family: 'Open Sans';
+        background: #F8F8F8;
+      }
+ 
+      .user {
+          padding: 50px 20px;
+          background: #FFFFFF;
+          border-radius: 2px;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          width: 330px;
+          display: block;
+          margin: 0 auto;
+      }
+ 
+      #user-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 10px auto;
+      }
+ 
+      h1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: lighter;
+      }
+ 
+      #user-name {
+        color: #0066AA;
+        font-weight: bold;
+      }
+ 
+      #user-email {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: #0066AA;
+      }
+ 
+      .g-signin2,
+      .g-signin2 .abcRioButton {
+        display: block;
+        margin: 20px auto 0 auto;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD4sVCB-WdgneN_-xleM5McK35qbeJ3Fec",
+        authDomain: "mydream-7f438.firebaseapp.com",
+        databaseURL: "https://mydream-7f438.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1107150519366411',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <a href="https://www.facebook.com/dialog/oauth?client_id=1107150519366411&redirect_uri=http://www.romanodev.com/mydream/mydream.html">Entrar com Facebook</a>
+
+
+
+
+
+
+
+    <script>
+      function onSignIn(response) {
+            // Conseguindo as informações do seu usuário:
+            var perfil = response.getBasicProfile();
+ 
+            // Conseguindo o ID do Usuário
+            var userID = perfil.getId();
+ 
+            // Conseguindo o Nome do Usuário
+            var userName = perfil.getName();
+ 
+            // Conseguindo o E-mail do Usuário
+            var userEmail = perfil.getEmail();
+ 
+            // Conseguindo a URL da Foto do Perfil
+            var userPicture = perfil.getImageUrl();
+ 
+            document.getElementById('user-photo').src = userPicture;
+            document.getElementById('user-name').innerText = userName;
+            document.getElementById('user-email').innerText = userEmail;
+ 
+            // Recebendo o TOKEN que você usará nas demais requisições à API:
+            var LoR = response.getAuthResponse().id_token;
+            console.log("~ le Tolkien: " + LoR);
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1107150519366411',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use graph api version 2.5
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+</script>
+
+</body>
+
 </html>
