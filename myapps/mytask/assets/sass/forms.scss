@@ -16,7 +16,7 @@ input[type=text]:focus:not([readonly]){
 	box-shadow: none;
 }
 .list input[type=text]{
-	border-bottom: 2px solid $theme;
+	border-bottom: 1px solid $theme;
 	color: $theme;
 }
 
@@ -38,6 +38,10 @@ textarea.materialize-textarea:focus:not([readonly]){
 	& + label{
 		color: $theme;
 	}
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after{
+	border: 2px solid $theme;
 }
 
 .btn-theme,.btn{

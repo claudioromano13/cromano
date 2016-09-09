@@ -49,6 +49,12 @@
       </div>
     </section>
 
+    <section class="load">
+      <div class="loader">   
+            <div class="loading"></div>
+        </div>
+    </section>
+
     <section class="tasks">
       <div clas="had-container">
         <div class="row">
@@ -78,26 +84,31 @@
       <section class="add-task">
         <div id="modal1" class="modal bottom-sheet">
           <div class="had-container">
-            <div class="row">
-              <div class="col s12">
+ 
                 <div class="modal-content">
                   <form  class="todo-form">
-                    <div class="input-field">
-                      <textarea data-ng-model="todoText" id="textarea1" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Minha nova tarefa é ...</label>
+                    <div class='row'>
+                      <div class="col s10">
+                        <div class="input-field">
+                          <input type="text" data-ng-model="todoText" id="textarea1" placeholder="Minha nova tarefa é ..." class="materialize-textarea" >
+            <!--               <label for="textarea1">Minha nova tarefa é ...</label> -->
+                        </div>
+                      </div>
+                      <div class="col s2">
+                        <button class="btn-floating btn-large waves-effect waves-light btn-theme" ng-disabled="!todoText"  data-ng-click="addTodo()">
+                          <i class="material-icons icon-theme">done</i>
+                        </button> 
+                      </div>
                     </div>
-                    <button class="btn waves-effect waves-light no-button right" ng-disabled="!todoText"  data-ng-click="addTodo()">
-                      <i class="material-icons icon-theme">done</i>
-                    </button>         
-                    <button class="btn waves-effect waves-light no-button right" ng-disabled="!todoText" data-ng-click="todoText = ''" type="reset">
+                            
+<!--                     <button class="btn waves-effect waves-light no-button right" ng-disabled="!todoText" data-ng-click="todoText = ''" type="reset">
                       <i class="material-icons icon-theme">delete</i>
                     </button>
                     <button class="btn waves-effect waves-light right no-button right" id="close-add-task" data-ng-click="todoText = ''" ng-disabled="!todoText" type="reset">
                       <i class="material-icons icon-theme">clear</i>
-                    </button>
+                    </button> -->
                   </form>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

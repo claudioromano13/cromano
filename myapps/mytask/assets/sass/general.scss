@@ -96,3 +96,46 @@ header{
 		}
 	}
 }
+
+
+
+
+
+//loader
+.loader{
+    position: fixed;
+    background: $theme;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    .loading{
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 60px;
+        height: 60px;
+        margin: -30px 0 0 -30px;
+        border-radius: 50%;
+        border: 5px solid transparent;
+        border-top-color:$theme-light;
+        z-index: 99999999;
+        -webkit-animation: spin 1s linear infinite;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    0%   { 
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
