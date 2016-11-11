@@ -16,9 +16,8 @@
           <a href="#!" class="brand-logo left">MyTasks</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">more_vert</i></a>
           <ul class="side-nav" id="mobile-demo">
-            <li><a href="#">Sobre o Desenvolvedor</a></li>
+            <li><a href="http://www.romanodev.com" target="_blank">Sobre o Desenvolvedor</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a href="#">Encerrar Sessão</a></li>
           </ul>
         </div>
       </nav>
@@ -38,7 +37,6 @@
       </div>
     </section>
 
-
     <section class="count-task" ng-hide="!todos.length">
       <div class="had-container">
         <div class="row">
@@ -49,11 +47,11 @@
       </div>
     </section>
 
-    <section class="load">
+<!--     <section class="load">
       <div class="loader">   
-            <div class="loading"></div>
+          <div class="loading"></div>
         </div>
-    </section>
+    </section> -->
 
     <section class="tasks">
       <div clas="had-container">
@@ -71,47 +69,25 @@
         </div>
       </div>
     </section>
-    <footer>
-      <section class="add">
-        <div clas="had-container">
-          <div class="row">
-            <div class="col s12">
-              <a class="btn-floating btn-large waves-effect waves-light btn-theme" id="edit" href="#modal1"><i class="material-icons">mode_edit</i></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="add-task">
-        <div id="modal1" class="modal bottom-sheet">
-          <div class="had-container">
- 
-                <div class="modal-content">
-                  <form  class="todo-form">
-                    <div class='row'>
-                      <div class="col s10">
-                        <div class="input-field">
-                          <input type="text" data-ng-model="todoText" id="textarea1" placeholder="Minha nova tarefa é ..." class="materialize-textarea" >
-            <!--               <label for="textarea1">Minha nova tarefa é ...</label> -->
-                        </div>
-                      </div>
-                      <div class="col s2">
-                        <button class="btn-floating btn-large waves-effect waves-light btn-theme" ng-disabled="!todoText"  data-ng-click="addTodo()">
-                          <i class="material-icons icon-theme">done</i>
-                        </button> 
-                      </div>
-                    </div>
-                            
-<!--                     <button class="btn waves-effect waves-light no-button right" ng-disabled="!todoText" data-ng-click="todoText = ''" type="reset">
-                      <i class="material-icons icon-theme">delete</i>
-                    </button>
-                    <button class="btn waves-effect waves-light right no-button right" id="close-add-task" data-ng-click="todoText = ''" ng-disabled="!todoText" type="reset">
-                      <i class="material-icons icon-theme">clear</i>
-                    </button> -->
-                  </form>
 
-            </div>
-          </div>
-        </div>
+    <footer>
+      <section class="add-task">
+          <div class="container">
+            <form  class="todo-form">
+              <div class='row'>
+                <div class="col s10">
+                  <div class="input-field">
+                    <input type="text" data-ng-model="todoText" id="textarea1" placeholder="Minha nova tarefa é ..." class="materialize-textarea">
+                  </div>
+                </div>
+                <div class="col s2">
+                  <button class="btn-floating btn-small waves-effect waves-light btn-theme" ng-disabled="!todoText"  data-ng-click="addTodo()">
+                    <i class="material-icons icon-theme">done</i>
+                  </button> 
+                </div>
+              </div>
+            </form>
+          </div>     
       </section>
     </footer>
 

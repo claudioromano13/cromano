@@ -22,10 +22,11 @@ header{
 	color: $white;
 }
 
-.add{
-    position: fixed;
-    bottom: 0;
-    right: 0;
+.btn-floating{ 
+	margin-top: 15px;
+	i {
+	    font-size: 1.2rem;
+	}
 }
 
 .list{
@@ -51,55 +52,43 @@ header{
 		}
 	}
 }
-.tasks{
-	ul{
-		&.task-list{
-			margin-bottom: 100px;
-			li{
-				margin-bottom: 10px;
-				padding: 10px 0;
-			    border-bottom: 1px dashed $theme;
-			    .icon-theme{
-					color: $highlight;
-				}
 
-				[type="checkbox"]+label{
-					max-width: 85%;
-					&.done-true{
-						text-decoration: line-through;
-						color: rgba($highlight,0.8);
-						font-style: italic;
-						
+
+
+section{
+	&.tasks{
+		ul{
+			&.task-list{
+				margin-bottom: 100px;
+				li{
+					margin-bottom: 10px;
+					padding: 10px 0;
+				    border-bottom: 1px dashed $theme;
+				    .icon-theme{
+						color: $highlight;
+					}
+
+					[type="checkbox"]+label{
+						max-width: 85%;
+						&.done-true{
+							text-decoration: line-through;
+							color: rgba($highlight,0.8);
+							font-style: italic;
+							
+						}
 					}
 				}
 			}
 		}
 	}
-}
-
-
-.modal{
-
-	background-color: $white;
-	form{
-		&.todo-form{
-			input[type='text']{
-				padding: 0 0 10px 0;
-			    height: auto;
-			}
-		}
-	}
-	.btn{
-		&:hover,&:focus{
-			background-color: $white;
-			box-shadow: none;
-		}
+	&.add-task{
+		border-top: 1px dashed #3e2723;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		background-color: $theme-light;
 	}
 }
-
-
-
-
 
 //loader
 .loader{

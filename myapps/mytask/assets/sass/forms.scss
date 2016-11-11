@@ -20,6 +20,11 @@ input[type=text]:focus:not([readonly]){
 	color: $theme;
 }
 
+input[type=text]{
+	height: 40px !important;
+	margin: 0;
+}
+
 input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
@@ -50,10 +55,10 @@ textarea.materialize-textarea:focus:not([readonly]){
 		background-color: $theme;
 	}
 	&[disabled]{
-		background-color: $white !important;
-		opacity:0.2;
+		background-color: none !important;
+		opacity:0;
 		&:hover{
-			background-color: $white !important;
+			background-color: none !important;
 		}
 	}
 }
@@ -74,6 +79,10 @@ textarea.materialize-textarea:focus:not([readonly]){
 	i{
 		color: $theme;
 	}
+}
+
+.input-field{
+	margin: 10px 0;
 }
 
 ::-webkit-input-placeholder {
