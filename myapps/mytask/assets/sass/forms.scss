@@ -1,0 +1,90 @@
+@import 'variables.scss';
+form{
+	input{
+		width: 100%;
+		margin: 0 0 20px 0;
+		color:$theme;
+	}
+}
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid $theme;
+    border-bottom: 2px solid $theme;
+}
+
+input[type=text]:focus:not([readonly]){
+	border-bottom: 1px solid $theme;
+	box-shadow: none;
+}
+.list input[type=text]{
+	border-bottom: 1px solid $theme;
+	color: $theme;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]), 
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]){
+	border-bottom: 1px solid $theme;
+	box-shadow: none;
+	& + label{
+		color: $theme;
+	}
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after{
+	border: 2px solid $theme;
+}
+
+.btn-theme,.btn{
+	background-color: $theme;
+	&:hover{
+		background-color: $theme;
+	}
+	&[disabled]{
+		background-color: $white !important;
+		opacity:0.2;
+		&:hover{
+			background-color: $white !important;
+		}
+	}
+}
+.btn-theme{
+	background-color: $theme;
+	i{
+		color: $white;
+	}
+}
+
+.no-button{
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0;
+	width: 33.33333333333%;
+}
+.btn{
+	i{
+		color: $theme;
+	}
+}
+
+::-webkit-input-placeholder {
+   color: $theme;
+}
+:-moz-placeholder {
+   color: $theme;
+}
+::-moz-placeholder {
+   color: $theme;  
+}
+:-ms-input-placeholder {  
+   color: $theme; 
+}
